@@ -2,5 +2,43 @@
     display: grid;
     grid-template-columns: repeat(3, 51px);
     grid-template-rows: repeat(3, 51px);
+    
+}
+
+#results {
+    font-size: 30px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+#container {
+    width: 400px;
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #282A2E;
     font-size: 40px;
+    color: orange
+}
+
+button {
+    height: 40px;
+
+    border-radius: 5px;
+    box-shadow: 1px 2px #afb5b6;
+    margin: 5px;
+    background-color:#68AAB8;
+}
+
+body {
+    margin: 0px;
+    background-color: #93857a;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
 }

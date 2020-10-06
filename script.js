@@ -81,6 +81,9 @@ const game = {
     render: function () {
         document.getElementById('main').innerHTML = '';
         document.getElementById('results').innerHTML = '';
+        const div = document.createElement('div');
+        div.textContent = this.whosTurn + ' turn';
+        document.getElementById('results').appendChild(div);
         for (let i = 0; i < this.grid.length; i++) {
             for (let j = 0; j < this.grid[i].length; j++) {
                 const square = document.createElement('div');
@@ -95,7 +98,6 @@ const game = {
             }
         }
         if (!this.keepGoing) {
-            const div = document.createElement('div');
             div.textContent = this.whoHasWon + ' has won';
             document.getElementById('results').appendChild(div);
             const button = document.createElement('button');
